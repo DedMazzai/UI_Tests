@@ -11,4 +11,8 @@ public class LoginPage {
     public void errorHintIsVisible(){
         errorHint.shouldBe(Condition.visible);
     }
+
+    public String errorColorCode(){
+        return errorHint.getCssValue("color");
+    }
 }
